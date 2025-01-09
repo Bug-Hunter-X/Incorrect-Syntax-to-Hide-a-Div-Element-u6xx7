@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <button onclick="myFunction()">Click Me</button>
+
+  <script>
+    function myFunction() {
+      // Incorrect way to hide the div, it will not work in all browsers
+      document.getElementById("myDiv").style.display = "none!"; 
+      //Correct way:
+      //document.getElementById("myDiv").style.display = "none";
+    }
+  </script>
+</body>
+</html>
