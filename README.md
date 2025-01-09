@@ -1,0 +1,3 @@
+# Uncommon HTML Bug: Incorrect Syntax to Hide a Div Element
+
+This repository demonstrates an uncommon bug in HTML related to hiding a div element using JavaScript.  The incorrect syntax `"none!"` instead of `"none"`  in the `style.display` property might not be caught by all linters and can cause unexpected behavior across different browsers.  The solution provides the correct syntax for hiding the element.
